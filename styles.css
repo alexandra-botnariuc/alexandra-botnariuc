@@ -1,37 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Styles */
+body, html {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
   color: white;
+  scroll-behavior: smooth;
   background: linear-gradient(135deg, #1b1b2f, #3a0ca3);
+  overflow-x: hidden;
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 0;
+  z-index: 100;
+  text-align: center;
+}
+
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px; }
+nav a { color: #ffd60a; text-decoration: none; font-weight: bold; }
 
 header {
   text-align: center;
-  padding: 60px 20px;
-  background: rgba(0,0,0,0.5);
+  padding: 120px 20px 80px 20px;
 }
 
-h1 { font-size: 3em; margin-bottom: 10px; }
-p { font-size: 1.2em; }
+h1 { font-size: 3em; margin: 0; }
+h2 { font-size: 2em; margin-bottom: 20px; }
+h3 { font-size: 1.5em; margin-bottom: 10px; }
+p { font-size: 1.1em; line-height: 1.6; }
 
 section {
-  padding: 40px 20px;
-  margin: 20px auto;
+  padding: 60px 20px;
   max-width: 800px;
+  margin: 20px auto;
   background: rgba(0,0,0,0.4);
   border-radius: 12px;
 }
 
-h2 { font-size: 2em; margin-bottom: 20px; }
-h3 { font-size: 1.5em; margin-bottom: 10px; }
-
 ul { list-style-type: disc; padding-left: 20px; }
+
 a { color: #ffd60a; text-decoration: none; }
 
 footer {
   text-align: center;
   padding: 20px;
   background: rgba(0,0,0,0.5);
+}
+
+/* Canvas for Stars */
+#stars {
+  position: fixed;
+  top:0; left:0;
+  width:100%; height:100%;
+  z-index: -1;
 }
 
